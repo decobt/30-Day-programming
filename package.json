@@ -1,0 +1,14 @@
+{
+  "name": "programming-challenges",
+  "version": "1.0.0",
+  "description": "30day programming challenges",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./test/appTest.js"
+  },
+  "author": "Trayche Roshkoski",
+  "license": "ISC"
+}
