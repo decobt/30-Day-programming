@@ -15,7 +15,7 @@ function FirstReverse(){
 
     //loop through input string and traverse from the end
     for(let i=args.length; i > 0; i--){
-      reverse = reverse + args[i-1]
+      reverse = reverse + args[i-1];
     }
 
     //don't forget to return your result
