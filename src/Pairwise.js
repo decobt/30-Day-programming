@@ -18,6 +18,11 @@ function Pairwise(){
   this.results = [11,1,10,0,1];
   this.getResult = function(args){
     //add your code here
+    sum = 0;
+
+    for(let i=0; i<args.length; i++){
+      for(let j=0;)
+    }
 
     //don't forget to return your result
     return args;
