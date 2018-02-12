@@ -17,15 +17,32 @@ function Pairwise(){
   ];
   this.results = [11,1,10,0,1];
   this.getResult = function(args){
-    //add your code here
-    sum = 0;
+    //define variables
+    var sum = 0;
+    var num = args[0], res = args[1], indices = [];
 
-    for(let i=0; i<args.length; i++){
-      for(let j=0;)
+    //loop through num array
+    for(let i=0; i<num.length; i++){
+      for(let j=i+1; j<num.length; j++){
+        //check if two numbers equal res, which makes them pair
+        if(num[i]+num[j]===res){
+          //check if they have not yet passed
+          if(!(indices.includes(i) || indices.includes(j))){
+            //if not, add them to indices array
+            indices.push(i);
+            indices.push(j);
+          }
+        }
+      }
+    }
+
+    //calculate the sum of the indices
+    for(let i=0; i<indices.length; i++){
+      sum = sum + indices[i];
     }
 
     //don't forget to return your result
-    return args;
+    return sum;
   }
 }
 
